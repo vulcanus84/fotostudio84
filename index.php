@@ -1,4 +1,5 @@
 <?php
+//Test
 include('assets/php/main_functions.php');
 $assetImageBase = __DIR__ . '/assets/img';
 $webAssetImageBase = 'assets/img';
