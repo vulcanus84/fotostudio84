@@ -1,0 +1,3 @@
+/galleries/*
+!/galleries/*/
+!/galleries/*/.gitkeep
