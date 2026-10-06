@@ -318,8 +318,8 @@ h2 { font-size:clamp(46px,5.8vw,82px); line-height:.96; letter-spacing:-.048em; 
 
 .studio-section { width:min(calc(100% - 40px), var(--max)); margin:0 auto; display:grid; grid-template-columns:.8fr 1.2fr; gap:70px; padding:130px 0; border-top:1px solid var(--line-strong); }
 .studio-number { font-size:clamp(150px,24vw,360px); line-height:.75; letter-spacing:-.09em; font-weight:300; color:#c8c3ba; }
-.studio-copy { max-width:720px; align-self:center; }
-.studio-copy > p { font-size:18px; line-height:1.8; color:var(--muted); max-width:640px; }
+.studio-text { align-self:center; }
+.studio-text > p { font-size:18px; line-height:1.8; color:var(--muted); }
 .facts { display:flex; flex-wrap:wrap; gap:9px; margin-top:38px; }
 .facts span { border:1px solid var(--line); padding:10px 15px; border-radius:999px; font-size:12px; text-transform:uppercase; letter-spacing:.12em; }
 
@@ -362,15 +362,11 @@ body.modal-open { overflow:hidden; }
     display:block;
     padding:120px 0 135px;
 }
-.studio-head { margin-bottom:54px; }
+.studio-head { margin-bottom:24px; }
 .studio-intro {
     display:grid;
-    grid-template-columns:1.15fr .85fr;
-    gap:70px;
     align-items:end;
-    margin-bottom:54px;
 }
-.studio-copy { max-width:760px; }
 .studio-number {
     justify-self:end;
     font-size:clamp(145px,20vw,300px);

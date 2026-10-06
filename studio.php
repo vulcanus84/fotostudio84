@@ -8,11 +8,9 @@ $studioImages = galleryImages($assetImageBase . '/studio', $webAssetImageBase . 
     </div>
 
     <div class="studio-intro">
-        <div class="studio-copy reveal">
-            <p>In Schönenwerd entstehen Bilder mit Fokus auf Licht, Ausdruck und einer reduzierten Ästhetik. Vom Einzelportrait bis zum Produktshooting soll das Ergebnis hochwertig wirken, ohne künstlich zu werden.</p>
-            <div class="facts">
-                <span>People</span><span>Kids</span><span>Business</span><span>Products</span><span>Pets</span><span>Portraits</span>
-            </div>
+        <div class="studio-text reveal">
+            <p>In meinem 50m2 grossen Studio haben wir in einem gemütlichen Rahmen die Möglichkeiten (fast) alle Ideen umzusetzen.</p>
+            <p>Es befindet sich im 3. Stock im ruhigen Gewerbe in Schönenwerd und wir können ungestört an der Umsetzung von deinen Bildideen arbeiten.</p>
         </div>
         <?php if (!$studioImages): ?>
             <div class="studio-number reveal" aria-hidden="true">84</div>
