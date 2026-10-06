@@ -1,5 +1,4 @@
 <?php
-//Test
 include('assets/php/main_functions.php');
 $assetImageBase = __DIR__ . '/assets/img';
 $webAssetImageBase = 'assets/img';
@@ -49,7 +48,6 @@ $webAssetImageBase = 'assets/img';
 
 <footer>
     <span>© <?= date('Y') ?> Fotostudio84</span>
-    <span>Schönenwerd</span>
 </footer>
 
 <script src="assets/js/main.js"></script>
