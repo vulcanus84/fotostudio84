@@ -1,37 +1,6 @@
 <?php
 
-$shootingDays = [
-    [
-        'date' => '2026-11-23',
-        'description' => 'Einführungsangebot für nur 84 Fr.',
-        'appointments' => [
-            ['time' => '08:30 – 10:00', 'status' => 'available'],
-            ['time' => '10:30 – 12:00', 'status' => 'available'],
-            ['time' => '13:00 – 14:30', 'status' => 'available'],
-            ['time' => '15:00 – 16:30', 'status' => 'available'],
-        ]
-    ],
-    [
-        'date' => '2026-12-06',
-        'description' => 'Shooting-Day im Studio 84',
-        'appointments' => [
-            ['time' => '08:30 – 10:00', 'status' => 'available'],
-            ['time' => '10:30 – 12:00', 'status' => 'available'],
-            ['time' => '13:00 – 14:30', 'status' => 'available'],
-            ['time' => '15:00 – 16:30', 'status' => 'booked'],
-        ]
-    ],
-    [
-        'date' => '2026-12-13',
-        'description' => 'Shooting-Day im Studio 84',
-        'appointments' => [
-            ['time' => '08:30 – 10:00', 'status' => 'available'],
-            ['time' => '10:30 – 12:00', 'status' => 'available'],
-            ['time' => '13:00 – 14:30', 'status' => 'available'],
-            ['time' => '15:00 – 16:30', 'status' => 'available'],
-        ]
-    ],
-];
+include 'shootingDays_dates.php';
 
 $germanDays = [
     'Monday'    => 'Montag',
@@ -92,6 +61,10 @@ $mailSubject = 'Fotostudio84 Shooting-Anfrage';
                 <?php
                 $date = new DateTime($day['date']);
 
+                // Vergangene Termine überspringen
+                if ($date < new DateTime('today')) {
+                    continue;
+                }
                 $dayName = $date->format('l');
                 $dateFormatted = $date->format('d. F Y');
 
