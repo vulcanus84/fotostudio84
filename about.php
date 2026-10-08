@@ -13,7 +13,7 @@
             <span class="about-caption">Fotografie · Kreativität · Emotionen</span>
         </div>
         <div class="about-text reveal">
-            <p class="intro">Ich fotografiere gerne kreativ und mit Ausdruck. Die Bilder sollen eine Emotion wecken und die Gedanken des Betrachters anregen.</p>
+            <p class="intro">Ich fotografiere gerne <em>kreativ</em> und mit Ausdruck. Die Bilder sollen eine <em>Emotion</em> wecken und die Gedanken des Betrachters anregen.</p>
             <p>In meinem Fotostudio in Schönenwerd versuche ich in entspannter Atmosphäre Bilder zu erschaffen, die etwas Einzigartiges haben.</p>
             <a class="text-link" href="#contact">Shooting besprechen <span>↘</span></a>
         </div>

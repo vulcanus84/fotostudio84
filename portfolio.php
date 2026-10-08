@@ -3,12 +3,9 @@ $galleryBase = __DIR__ . '/galleries';
 $webGalleryBase = 'galleries';
 
 $labels = [
-    'people' => ['title' => 'People', 'subtitle' => 'Portraits, Couples & Lifestyle'],
-    'kids' => ['title' => 'Kids', 'subtitle' => 'Natürlich, lebendig, echt'],
-    'products' => ['title' => 'Products', 'subtitle' => 'Produkte klar in Szene gesetzt'],
-    'pets' => ['title' => 'Pets', 'subtitle' => 'Charakter auf vier Pfoten'],
+    'people' => ['title' => 'Menschen', 'subtitle' => 'Portraits, Paare & Lifestyle'],
+    'pets' => ['title' => 'Tiere', 'subtitle' => 'Charakter auf vier Pfoten'],
     'portraits' => ['title' => 'Portraits', 'subtitle' => 'Ausdrucksstarke Einzelportraits'],
-    'couples' => ['title' => 'Paare', 'subtitle' => 'Emotionen und Nähe einfangen'],
 ];
 
 $galleries = [];
@@ -43,7 +40,6 @@ foreach ($labels as $slug => $meta) {
                     <div class="category-meta">
                         <div>
                             <h3><?= htmlspecialchars($gallery['title']) ?></h3>
-                            <p><?= htmlspecialchars($gallery['subtitle']) ?></p>
                         </div>
                         <span class="arrow">↗</span>
                     </div>
