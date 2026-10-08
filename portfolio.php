@@ -1,6 +1,6 @@
 <?php
-$galleryBase = __DIR__ . '/galleries';
-$webGalleryBase = 'galleries';
+$galleryBase = __DIR__ . '/portfolio';
+$webGalleryBase = 'portfolio';
 
 $labels = [
     'people' => ['title' => 'Menschen', 'subtitle' => 'Portraits, Paare & Lifestyle'],
