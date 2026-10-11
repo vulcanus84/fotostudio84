@@ -10,10 +10,11 @@ $webAssetImageBase = 'assets/img';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Fotostudio84 in Schönenwerd – kreative Fotografie mit dem Auge fürs Detail">
-    <title>Fotostudio84 | Fotostudio Schönenwerd</title>
+    <title>Fotostudio84 | Schönenwerd</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -26,8 +27,9 @@ $webAssetImageBase = 'assets/img';
     </button>
     <nav class="main-nav" aria-label="Hauptnavigation">
         <a href="#about">Über mich</a>
-        <a href="#shootingdays">Shooting-Days</a>
         <a href="#studio">Studio</a>
+        <a href="#shooting">Shooting</a>
+        <a href="#shootingdays">Shooting-Days</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Kontakt</a>
     </nav>
@@ -37,11 +39,12 @@ $webAssetImageBase = 'assets/img';
 
 <?php
     include('hero.php');
-    include('about.php');
-    include('shootingDays.php');
-    include('studio.php');
-    include('portfolio.php');
-    include('contact.php');
+    $nr = "01"; include('about.php');
+    $nr = "02"; include('studio.php');
+    $nr = "03"; include('shooting.php');
+    $nr = "04"; include('shootingDays.php');
+    $nr = "05"; include('portfolio.php');
+    $nr = "06"; include('contact.php');
 ?>
 
 </main>

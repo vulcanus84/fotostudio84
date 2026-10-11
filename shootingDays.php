@@ -36,7 +36,7 @@ $mailSubject = 'Fotostudio84 Shooting-Anfrage';
 
         <div class="section-head reveal">
             <div class="section-label">
-                <span>02</span>
+                <span><?= $nr ?></span>
                 <p class="eyebrow">Shooting-Days</p>
             </div>
         </div>
@@ -48,13 +48,16 @@ $mailSubject = 'Fotostudio84 Shooting-Anfrage';
                     Die Shooting-Days sind eine super Gelegenheit, um in meinem Fotostudio in Schönenwerd ein professionelles Shooting zu erleben. 
                     Du bekommst  1.5h Shooting mit professionellem Licht-Setup und einer Auswahl an bearbeiteten Bildern für nur 120 CHF.
                 </p>
-
+                <p>
+                    Jeder Shooting-Day hat ein spezielles Thema, das wir gemeinsam umsetzen. Die Themen sind vielfältig und bieten dir die Möglichkeit, kreative und einzigartige Bilder zu erhalten.
+                </p>
                 <p>
                     Die Termine sind limitiert und du siehst unten die freien Zeiten. 
                     Klicke auf einen freien Termin, um direkt eine E-Mail mit deiner Buchungsanfrage zu erstellen oder schicke mir eine Nachricht per WhatsApp.
                 </p>
             </div>
 
+            <?php $date_available = false; ?>
 
             <?php foreach ($shootingDays as $day): ?>
 
@@ -65,6 +68,8 @@ $mailSubject = 'Fotostudio84 Shooting-Anfrage';
                 if ($date < new DateTime('today')) {
                     continue;
                 }
+
+                $date_available = true;
                 $dayName = $date->format('l');
                 $dateFormatted = $date->format('d. F Y');
 
@@ -145,5 +150,10 @@ $mailSubject = 'Fotostudio84 Shooting-Anfrage';
                 </div>
 
             <?php endforeach; ?>
+            <?php if (!$date_available): ?>
+                <div class="no-appointments reveal" style="grid-column: 1 / -1;">
+                    <p>Derzeit sind keine Shooting-Days verfügbar. Bitte kontaktiere mich direkt, um einen individuellen Termin zu vereinbaren.</p>
+                </div>
+            <?php endif; ?>
         </div>
     </section>

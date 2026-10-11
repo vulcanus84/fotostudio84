@@ -5,7 +5,7 @@
 
 <section class="content-section" id="about">
     <div class="section-head reveal">
-        <div class="section-label"><span>01</span><p class="eyebrow">Über mich</p></div>
+        <div class="section-label"><span><?= $nr ?></span><p class="eyebrow">Über mich</p></div>
     </div>
     <div class="about-grid">
         <div class="about-image reveal <?= $image ? 'has-photo' : '' ?>">

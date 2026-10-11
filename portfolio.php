@@ -21,7 +21,7 @@ foreach ($labels as $slug => $meta) {
 
 <section class="content-section" id="portfolio">
     <div class="section-head reveal">
-        <div class="section-label"><span>04</span><p class="eyebrow">Portfolio</p></div>
+        <div class="section-label"><span><?= $nr ?></span><p class="eyebrow">Portfolio</p></div>
     </div>
 
     <div class="category-grid">
@@ -29,21 +29,20 @@ foreach ($labels as $slug => $meta) {
             $cover = $gallery['images'][0] ?? null;
         ?>
             <article class="category-card reveal" data-gallery="<?= htmlspecialchars($slug) ?>">
-                <button class="category-open" type="button" aria-label="<?= htmlspecialchars($gallery['title']) ?> öffnen">
-                    <div class="category-image <?= $cover ? '' : 'is-empty' ?>">
-                        <?php if ($cover): ?>
-                            <img src="<?= htmlspecialchars($cover) ?>" alt="<?= htmlspecialchars($gallery['title']) ?> Referenzbild" loading="lazy">
-                        <?php else: ?>
-                            <span><?= htmlspecialchars($gallery['title']) ?></span>
-                        <?php endif; ?>
-                    </div>
-                    <div class="category-meta">
-                        <div>
-                            <h3><?= htmlspecialchars($gallery['title']) ?></h3>
-                        </div>
-                        <span class="arrow">↗</span>
-                    </div>
-                </button>
+<button class="category-open" type="button" aria-label="<?= htmlspecialchars($gallery['title']) ?> öffnen">
+    <div class="category-image <?= $cover ? '' : 'is-empty' ?>">
+        <?php if ($cover): ?>
+            <img src="<?= htmlspecialchars($cover) ?>" alt="<?= htmlspecialchars($gallery['title']) ?> Referenzbild" loading="lazy">
+        <?php else: ?>
+            <span><?= htmlspecialchars($gallery['title']) ?></span>
+        <?php endif; ?>
+
+        <?php if ($cover): ?>
+            <h3 class="category-title"><?= htmlspecialchars($gallery['title']) ?></h3>
+        <?php endif; ?>
+    </div>
+</button>
+
             </article>
         <?php endforeach; ?>
     </div>
