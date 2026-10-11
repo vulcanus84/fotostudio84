@@ -28,7 +28,7 @@
 
                 <a
                     class="contact-icon-link"
-                    href="https://www.instagram.com/DEIN_INSTAGRAM_NAME/"
+                    href="https://www.instagram.com/fotostudio84.ch/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Fotostudio84 auf Instagram"
