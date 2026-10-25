@@ -100,7 +100,8 @@ p { font-size:17px; line-height:1.85; color:var(--muted); }
 }
 @media (max-width:520px) {
     .about-image { min-height:430px; }
-    .about-image { min-height:300px; padding:28px; }
+    .about-image { min-height:300px; }
+    .about-caption { font-size:10vw; }
 }
 
 /* ------------------------------------------------------------ */
