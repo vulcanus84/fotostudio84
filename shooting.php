@@ -45,3 +45,4 @@ $prices = [
         <?php endforeach; ?>
     </div>
 </section>
+
