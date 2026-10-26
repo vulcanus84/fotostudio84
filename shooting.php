@@ -12,7 +12,7 @@ $prices = [
         'title' => 'Shooting Relaxed',
         'price' => 'CHF 190',
         'text' => 'Für alle, die mehr Zeit und Auswahl für ihr Shooting möchten.',
-        'items' => ['75 Min. Shooting', 'verschiedene Sets möglich', '6 professionell bearbeitete Bilder']
+        'items' => ['75 Min. Shooting', 'Verschiedene Sets möglich', '6 professionell bearbeitete Bilder']
     ],
     [
         'title' => 'Shooting Extended',
